@@ -1,0 +1,39 @@
+html, body{
+  height: 100vh;
+  margin:0px;
+}
+.welcome {
+  height: 100vh;
+  background-image: linear-gradient(to right, #3366ff, #a9fcff);
+}
+
+.welcome > img {
+  max-width: 200px;
+  max-height: 250px;
+}
+
+
+
+.login > h2 {
+  margin-top: 50px;
+  text-align: center;
+  padding: 40px;
+}
+
+.login > ul {
+  text-transform: uppercase;
+}
+
+.login > .nav-pills > li > .nav-link {
+  color: #555
+}
+
+.login > .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #3366ff;
+  color: #FFFFFF;
+}
+
+.login > div >img {
+  width: 30%;
+
+}

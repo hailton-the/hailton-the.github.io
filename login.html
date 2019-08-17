@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Hailtwitter</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body class="container-fluid">
+    <div class="row">
+      <section class="col-lg-9 d-none d-sm-block welcome">
+        <img class="imagem" src="img/twitter.png" alt="company">
+
+        <h1>HAILTWITTER</h1>
+
+        <p>
+          Bem vindo!
+        </p>
+
+      </section>
+      <section class="col-lg-3 col-sm-12 login">
+        <div class="text-center mt-5 d-sm-block d-md-none">
+          <img class="" src="img/twitter9.png"> <br> <h2>HAILTWITTER</h2>
+        </div>
+
+        <h2>MENU</h2>
+
+        <ul class="nav nav-tabs nav-fill nav-pills" id="tab" role= "tablist">
+          <li class="nav-item">
+            <a href="#login" class="nav-link active" data-toggle="tab">Login</a>
+          </li>
+          <li class="nav-item">
+            <a href="#cadastro" class="nav-link" data-toggle="tab">Cadastro</a>
+          </li>
+
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="login">
+              <form action="" method="post">
+                <input type="email" class="form-control form-control-lg mt-4" placeholder="Email">
+                <input type="password" class="form-control form-control-lg mt-2 mb-2" placeholder="Senha">
+                <button class="btn btn-info btn-lg btn-block">ENTRAR</button>
+                <div class="text-center mt-4">
+                  <a href="#recuperar-senha" data-toggle="modal">Esqueci a Senha</a>
+
+                  <div class="modal fade" tabindex="-1" id="recuperar-senha">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-tittle">Recuperar Senha</h5>
+                          <button class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+
+                        </div>
+
+                        <div class="modal-body">
+                          <form action="">
+                            <label for="recover">Email: </label>
+                            <input id="recover" type="email" class="form-control form-control-lg" placeholder="Email">
+                            <button class="btn btn-info btn-lg btn-block mt-3">RECUPERAR</button>
+                          </form>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </form>
+          </div>
+
+          <div class="tab-pane" id="cadastro">
+              <form id="form_cadastro" action="" method="post"><br>
+                Nome:<input required id="cadastro_nome" type="text" class="form-control form-control-lg mt-2">
+                Email:<input required id="cadastro_email" type="email" class="form-control form-control-lg mt-2">
+                Escolha sua senha: <input required id="cadastro_senha" type="password" class="form-control form-control-lg mt-2">
+                <button id="cadastro_btn" class="btn btn-info btn-lg btn-block mt-2">CADASTRAR</button>
+              </form>
+
+              <div class="alert alert-info mt-5" style="display: none;" id="cadastro_ok">
+                <strong>Pronto!</strong>Cadastro realizado!
+                <br>
+                <button id="novo_cadastro" class="btn btn-info mt-3">Novo Cadastro</button>
+              </div>
+              <div class="alert alert-erro mt-5" style="display: none;" id="cadastro_erro">
+                <strong>Erro: </strong>Tente novamente.
+              </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+  </body>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/config.js"></script>
+</html>

@@ -1,0 +1,1 @@
+const api_url = 'https://hailton-frontend-api.firebaseio.com';
